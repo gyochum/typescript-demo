@@ -4,11 +4,20 @@
   "description": "typescript demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run live\" \"npm run tsc\"",
+    "live": "live-server --host=localhost --quiet",
+    "tsc": "tsc -w"
   },
   "author": "gary yochum",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^2.2.0",
+    "live-server": "^1.0.0",
+    "systemjs": "^0.19.31",
     "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0"
   }
 }

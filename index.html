@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Gary's Super Cool TypeScript Demo</title>
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"></style>
+        
+        <style type="text/css">
+            .icon{
+                width: 100px;
+                height: 100px;
+                padding: 15px;
+                margin: 10px;
+                border: 1px #000 solid;
+                border-radius: 60%;
+                font-size: 64px;
+                text-align: center; 
+            }
+            
+            .remove{
+                cursor: pointer;
+            }
+        </style>
+                
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.22/system.js"></script>
+    <script type="text/javascript">
+        System.defaultJSExtensions = true;
+        System.import('App').then(function(module) {
+            new module.App();
+        })
+    </script>
+    </head>
+    <body>
+        <button class="add">Add a font</button>
+        <div id="container">
+            <span class="font-container">
+                <i class="icon"></i>
+                <span class="remove">x</span>
+            </span>
+        </div>
+    </body>
+</html>
