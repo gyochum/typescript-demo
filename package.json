@@ -6,7 +6,8 @@
   "scripts": {
     "start": "concurrently \"npm run live\" \"npm run tsc\"",
     "live": "live-server --host=localhost --quiet",
-    "tsc": "tsc -w"
+    "tsc": "tsc -w",
+    "setup": "npm install && typings install"
   },
   "author": "gary yochum",
   "license": "ISC",
